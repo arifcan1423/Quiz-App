@@ -14,8 +14,8 @@ function UI(){
     this.time_line = document.querySelector(".time_line")
 }
 
-UI.prototype.soruGoster = function soruGoster(soru){
-    let question = `<span>${soru.soruMetni}</span>`;
+UI.prototype.soruGoster = function soruGoster(soru,soruSayisi){
+    let question = `<span><b>${soruSayisi}-</b>${soru.soruMetni}</span>`;
     let options =``;
 
     for(let cevap in soru.cevapSecenekleri){

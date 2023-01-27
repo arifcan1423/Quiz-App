@@ -4,7 +4,7 @@ const ui = new UI();
 const quiz = new Quiz(sorular);
 
 ui.btn_start.addEventListener("click",function(){
-    ui.soruGoster(quiz.soruGetir());
+    ui.soruGoster(quiz.soruGetir(),quiz.soruIndex +1);
     startTimer(10);
     startTimerLine();
     ui.quiz_box.classList.add("active");
@@ -14,8 +14,8 @@ ui.btn_start.addEventListener("click",function(){
 
 ui.btn_next.addEventListener("click",function(){
     if(quiz.sorular.length != quiz.soruIndex +1){
-        ui.soruGoster(quiz.soruGetir());
         quiz.soruIndex +=1 ;
+        ui.soruGoster(quiz.soruGetir(),quiz.soruIndex +1);
         clearInterval(counter);
         startTimer(10);
         clearInterval(counterLine);

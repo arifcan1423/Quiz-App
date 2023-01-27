@@ -9,7 +9,7 @@ Soru.prototype.cevabıKontrolEt = function(cevap){
 }
 
 let sorular = [
-    new Soru("1-Hangisi js paket kontol uygulamasıdır?",{a:"Node.js",b:"typecript",c:"Npm"},"c"),
-    new Soru("2-Hangisi js paket kontol uygulamasıdır?",{a:"Node.js",b:"typecript",c:"Npm"},"c"),
-    new Soru("3-Hangisi js paket kontol uygulamasıdır?",{a:"Node.js",b:"typecript",c:"Npm"},"c")
+    new Soru("Hangisi js paket kontol uygulamasıdır?",{a:"Node.js",b:"typecript",c:"Npm"},"c"),
+    new Soru("Hangisi js paket kontol uygulamasıdır?",{a:"Node.js",b:"typecript",c:"Npm"},"c"),
+    new Soru("Hangisi js paket kontol uygulamasıdır?",{a:"Node.js",b:"typecript",c:"Npm"},"c")
 ]
